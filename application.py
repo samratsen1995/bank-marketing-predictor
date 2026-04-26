@@ -17,6 +17,7 @@ pdays    = st.number_input("Pdays (-1 if not contacted)")
 previous = st.number_input("Previous (contacts)")
 
 # Categorical inputs
+
 job      = st.selectbox("Job", ["admin.","blue-collar","entrepreneur",
                                 "housemaid","management","retired",
                                 "self-employed","services","student",
@@ -65,4 +66,4 @@ if st.button("Predict"):
     if result[0] == 1:
         st.success("✅ Customer is Eligible")
     else:
-        st.error("❌ Customer is Not Eligible")
+        st.info("❌ Customer is Not Eligible")
